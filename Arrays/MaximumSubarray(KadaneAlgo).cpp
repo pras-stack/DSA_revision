@@ -1,3 +1,10 @@
+Approach :  (Kadane’s method)
+Kadane’s method is a famous algorithm for sub array sum. In this method we just iterate once over the given input array. 
+We take a current sum initially with value zero and add each element in the path. We add each element to the current sum if the previous 
+current sum is not negative or otherwise we just break the continuity and update the current sum with current element.
+Along with it at each position we check if the current sum is also global maximum or not and update the global maximum according to that.
+
+
 /* Algorithm:
 Create a variable to store global maximum. Initialise with most negative number(INT_MIN).
 Create a variable to store current sum. Initialise with zero.
